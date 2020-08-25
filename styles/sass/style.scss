@@ -1,35 +1,6 @@
-/* Stripping styles .................... */
-html {
-    font-size: 62.5%;
-}
+@import "setup";
 
-body {
-    font-size: 1.6rem;
-}
+// Mixins
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-ul,
-form {
-    margin: 0;
-    padding: 0;
-}
+@import "stripped-grouped";
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-img {
-    width: 100%;
-    display: block;
-}
