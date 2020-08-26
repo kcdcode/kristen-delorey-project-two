@@ -256,8 +256,8 @@ a {
 }
 
 img {
-  max-width: 100%;
-  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -267,7 +267,7 @@ img {
 }
 
 h1 {
-  font-size: 11.16rem;
+  font-size: 7rem;
   font-family: 'Playfair Display SC', serif;
   font-style: italic;
   color: #063974;
@@ -331,11 +331,11 @@ a.logo {
 }
 
 p {
-  font-size: 3.0rem;
+  font-size: 1.6rem;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  line-height: 58px;
-  letter-spacing: 3.2px;
+  line-height: 30px;
+  letter-spacing: 2px;
 }
 
 ::-webkit-input-placeholder {
@@ -396,4 +396,93 @@ header .logo-and-nav ul {
 .home-header {
   background: url(../assets/home-image-1.jpg) center/cover;
   height: 100vh;
+  position: relative;
+}
+
+.home-header .home-heading {
+  height: 100%;
+  border: red 2px solid;
+}
+
+.home-header .home-heading img {
+  width: 50%;
+  position: absolute;
+  bottom: -50px;
+  left: 0%;
+}
+
+.home-header .home-heading h1,
+.home-header .home-heading h3 {
+  position: absolute;
+  z-index: 10;
+}
+
+.home-main .main-s1 {
+  background-color: #FAFFFE;
+}
+
+.home-main .main-s1 .main-s1-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+}
+
+.home-main .main-s1 .main-s1-flex .main-s1-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.home-main .main-s1 .main-s1-flex .main-s1-txt h4 {
+  padding-bottom: 15px;
+}
+
+.home-main .main-s1 .main-s1-flex .main-s1-txt p {
+  padding-bottom: 10px;
+}
+
+.home-main .main-s1 .main-s1-flex img {
+  -webkit-box-shadow: -20px 20px #50E3C2;
+          box-shadow: -20px 20px #50E3C2;
+}
+
+.home-main .main-s2 {
+  background-color: #D2F9F1;
+}
+
+.home-main .main-s2 .main-s2-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.home-main .main-s2 .main-s2-flex img {
+  margin-right: 30px;
+  width: calc((100% - 60px) / 3);
+}
+
+.home-main .main-s2 .main-s2-flex img:last-child {
+  margin-right: 0;
+}
+
+.home-main .main-s3 {
+  background-color: #FAFFFE;
+}
+
+.home-main .main-s3 .main-s3-flex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

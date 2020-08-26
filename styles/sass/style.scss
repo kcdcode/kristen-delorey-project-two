@@ -6,10 +6,8 @@
 //     color: #FFF;
 // }
 
-$backgroundColor: #50E3C2;
-
-
-
+$primaryBackgroundColor: #FAFFFE;
+$secondaryBackgroundColor: #D2F9F1;
 
 // $backgroundColor: orange;
 // $headLineFontSize: 25px;
@@ -31,5 +29,7 @@ $backgroundColor: #50E3C2;
 
 @import "grouped";
 @import "header";
-@import "main";
+@import "main-home";
+@import "main-blog";
+@import "main-contact";
 

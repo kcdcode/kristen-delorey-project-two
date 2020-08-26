@@ -18,7 +18,26 @@ header {
 .home-header {
     background: url(../assets/home-image-1.jpg) center/cover;
     height: 100vh;
-        
+    position: relative;
+
+    .home-heading {
+        height: 100%;
+        border: red 2px solid;
+
+        img {
+            width: 50%;
+            position: absolute;
+            bottom: -50px;
+            left: 0%;
+        }
+
+        h1,
+        h3 {
+            position: absolute;
+            z-index: 10;
+            // margin-top: -70px;
+        }
+    }     
 }
 
 
