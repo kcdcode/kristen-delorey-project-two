@@ -1,6 +1,35 @@
 @import "setup";
 
-// Mixins
+// Mixins and global selectors ....................
+// span {
+//     font-size: 2rem;
+//     color: #FFF;
+// }
 
-@import "stripped-grouped";
+$backgroundColor: #50E3C2;
+
+
+
+
+// $backgroundColor: orange;
+// $headLineFontSize: 25px;
+// $linkColor: cadetblue;
+
+// @mixin customButton($buttonColor) {
+//     font-size: 16px;
+//     color: black;
+//     font-weight: bold;
+//     padding: 20px;
+//     background-color: $buttonColor;
+// }
+
+// @mixin position($type, $top, $right) {
+//     position: $type;
+//     top: $top;
+//     right: $right;
+// }
+
+@import "grouped";
+@import "header";
+@import "main";
 

@@ -1,0 +1,25 @@
+// Grouped header styles ............................................
+header {
+    padding-top: 20px;
+    .wrapper {
+        height: 100%;
+    }
+
+    .logo-and-nav {
+        display: flex;
+        justify-content: space-between;
+            ul {
+            display: flex;
+        }
+    }
+}
+
+// Home header styles ............................................
+.home-header {
+    background: url(../assets/home-image-1.jpg) center/cover;
+    height: 100vh;
+        
+}
+
+
+

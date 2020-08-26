@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beachstays homepage</title>
+    <title>Beachstays blog page</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
         rel="stylesheet">
@@ -15,17 +14,17 @@
 </head>
 <body>
     <!-- Header seciton ............................................ -->
-    <header>
+    <header class="blog-header">
         <div class="wrapper">
             
             <!-- Logo and nav section ............................................ -->
             <div class="logo-and-nav">
-                <a href="#">beachstays</a>
+                <a class="logo" href="#">beachstays</a>
                 <ul>
-                    <li><a href="index.html">home</a></li>
+                    <li><a href="./index.html">home</a></li>
                     <li><a href="#">about</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="./blog.html">blog</a></li>
+                    <li><a href="./contact.html">contact</a></li>
                 </ul>
             </div>
 
@@ -35,7 +34,7 @@
     </header>
     
     <!-- Main section ............................................ -->
-    <main>
+    <main class="blog-main">
         <!-- Main section 1 ............................................ -->
         <section>
             <div class="wrapper">
@@ -105,9 +104,8 @@
                         <label for="comment"></label>
                         <textarea id="comment" cols="800" rows="10" placeholder="Message"></textarea>
                     </div>
+                    <button type="submit" class="form-button">post comment</button>
                 </form>
-                
-                <button type="submit" class="form-button">post comment</button>
             </div>
         </section>
     </main>
