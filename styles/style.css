@@ -352,38 +352,6 @@ p {
   letter-spacing: 2px;
 }
 
-::-webkit-input-placeholder {
-  font-size: 2.0rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-:-ms-input-placeholder {
-  font-size: 2.0rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-::-ms-input-placeholder {
-  font-size: 2.0rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-::placeholder {
-  font-size: 2.0rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
 span {
   font-size: 2rem;
   display: inline-block;
@@ -418,16 +386,6 @@ header .logo-and-nav ul li li a {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 0px 50px;
 }
 
@@ -435,9 +393,6 @@ form .name-and-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 30px;
@@ -449,14 +404,104 @@ form .name-and-email .email-field {
   width: 50%;
 }
 
-form .name-and-email input[type="text"],
-form .name-and-email input[type="email"] {
+form .name-and-email .name-field input,
+form .name-and-email .name-field textarea,
+form .name-and-email .email-field input,
+form .name-and-email .email-field textarea {
+  border-bottom: #50E3C2 solid 2px;
+  padding: 15px;
+}
+
+form .name-and-email .name-field input[type="text"],
+form .name-and-email .name-field input[type="email"],
+form .name-and-email .email-field input[type="text"],
+form .name-and-email .email-field input[type="email"] {
   width: 100%;
+}
+
+form .name-and-email .name-field input[type="text"]::-webkit-input-placeholder,
+form .name-and-email .name-field input[type="email"]::-webkit-input-placeholder,
+form .name-and-email .email-field input[type="text"]::-webkit-input-placeholder,
+form .name-and-email .email-field input[type="email"]::-webkit-input-placeholder {
+  font-size: 2.0rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+form .name-and-email .name-field input[type="text"]:-ms-input-placeholder,
+form .name-and-email .name-field input[type="email"]:-ms-input-placeholder,
+form .name-and-email .email-field input[type="text"]:-ms-input-placeholder,
+form .name-and-email .email-field input[type="email"]:-ms-input-placeholder {
+  font-size: 2.0rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+form .name-and-email .name-field input[type="text"]::-ms-input-placeholder,
+form .name-and-email .name-field input[type="email"]::-ms-input-placeholder,
+form .name-and-email .email-field input[type="text"]::-ms-input-placeholder,
+form .name-and-email .email-field input[type="email"]::-ms-input-placeholder {
+  font-size: 2.0rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+form .name-and-email .name-field input[type="text"]::placeholder,
+form .name-and-email .name-field input[type="email"]::placeholder,
+form .name-and-email .email-field input[type="text"]::placeholder,
+form .name-and-email .email-field input[type="email"]::placeholder {
+  font-size: 2.0rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 2px;
 }
 
 textarea {
   width: 100%;
   margin-bottom: 30px;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #FFB100;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #FFB100;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+input[type="text"]::-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #FFB100;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #FFB100;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 footer {
@@ -747,38 +792,38 @@ footer p {
   margin-left: 0.5em;
 }
 
-.blog-main-s2 {
-  padding-right: 50%;
-}
-
 .blog-main-s2 p.blog-comments-title {
   text-align: center;
+  width: 50%;
+  padding-bottom: 75px;
 }
 
-.blog-main-s2 .blog-comments-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.blog-main-s2 .blog-comments-1 .blog-comments-1-img {
-  width: 20%;
-}
-
-.blog-main-s2 .blog-comments-1 .blog-comments-1-txt {
-  width: 80%;
-}
-
+.blog-main-s2 .blog-comments-1,
 .blog-main-s2 .blog-comments-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 30px;
 }
 
+.blog-main-s2 .blog-comments-1 .blog-comments-1-img,
+.blog-main-s2 .blog-comments-1 .blog-comments-2-img,
+.blog-main-s2 .blog-comments-2 .blog-comments-1-img,
 .blog-main-s2 .blog-comments-2 .blog-comments-2-img {
-  width: 20%;
+  width: 15%;
 }
 
+.blog-main-s2 .blog-comments-1 .blog-comments-1-txt,
+.blog-main-s2 .blog-comments-1 .blog-comments-2-txt,
+.blog-main-s2 .blog-comments-2 .blog-comments-1-txt,
 .blog-main-s2 .blog-comments-2 .blog-comments-2-txt {
-  width: 80%;
+  width: 35%;
+  padding-left: 50px;
+}
+
+.blog-main-s2 .blog-comments-1 .blog-comments-1-txt p:last-child,
+.blog-main-s2 .blog-comments-1 .blog-comments-2-txt p:last-child,
+.blog-main-s2 .blog-comments-2 .blog-comments-1-txt p:last-child,
+.blog-main-s2 .blog-comments-2 .blog-comments-2-txt p:last-child {
+  padding: 20px 0;
 }
