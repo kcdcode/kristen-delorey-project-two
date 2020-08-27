@@ -1,44 +1,66 @@
-// Grouped header styles ............................................
-header {
-    padding-top: 20px;
-    .wrapper {
-        height: 100%;
-    }
-
-    .logo-and-nav {
-        display: flex;
-        justify-content: space-between;
-            ul {
-            display: flex;
-        }
-    }
-}
-
 // Home header styles ............................................
 .home-header {
-    background: url(../assets/home-image-1.jpg) center/cover;
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     position: relative;
 
-    .home-heading {
-        height: 100%;
-        border: red 2px solid;
+        .wrapper {
+            height: 100%;
+            
+                .header-txt {
+                    text-align: left;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0 0 5% 45%;
+                    
 
-        img {
-            width: 50%;
-            position: absolute;
-            bottom: -50px;
-            left: 0%;
-        }
+                    h1 {
+                        z-index: 20;
+                        position: relative;
+                        }
+                }  
 
-        h1,
-        h3 {
-            position: absolute;
-            z-index: 10;
-            // margin-top: -70px;
-        }
-    }     
-}
+                img {
+                    width: 50%;
+                    position: absolute;
+                    bottom: -50px;
+                    left: 0%;
+                    z-index: 10;
+                }
+            }    
+        } 
+
+    // .home-heading {
+    //     height: 100%;
+
+    //     .header-txt {
+    //         width: 100%;
+    //         border: red 2px solid;
+    //     }
+
+    //     .header-img {
+    //         width: 100%;
+    //         display: flex;
+    //         justify-content: flex-end;
+    //         position: relative;
+    //         bottom: 450px;
+    //         img {
+    //             width: 800px;
+    //         }
+    //     }
+    // }
+    
 
 
 
+// h1,
+        // .small-h1 {
+        //     position: absolute;
+        //     z-index: 10;
+        //     margin-top: -70px;
+        // }

@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beachstays homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
-    <!--font-family: 'Lato', sans-serif;
-        font-family: 'Playfair Display SC', serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Offside&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad4f31f59a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -27,16 +26,12 @@
             </div>
             
             <!-- Page title and image............................................ -->
-            <div class="home-heading">
-                <div>
-                    <img src="./assets/header-box.jpg" alt="Sunglasses on beach sand">
-                </div>
-                
-                <div>
-                    <h3>welcome to</h3>
-                    <h1>beachstays</h1>
-                </div>
+            <div class="header-txt">
+                <h1 class="small-h1">welcome to</h1>
+                <h1>beachstays</h1>
             </div>
+            
+            <img src="./assets/header-box.jpg" alt="Sunglasses on beach sand">           
         </div>
     </header>
     
@@ -46,12 +41,12 @@
         <section class="main-s1">
                 <div class="main-s1-flex wrapper">
                     <div class="main-s1-txt">
-                        <h4>Visit Guyana</h4>
+                        <h3>Visit Guyana</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ducimus laboriosam porro impedit quia
                             odio, asperiores facilis dolorem pariatur ab voluptates cum at obcaecati accusantium a vero vitae
                             debitis. Ex, minus nesciunt mollitia vitae at dicta vel officia? Ipsam modi minima placeat mollitia
                             perferendis repellat facere maiores voluptatum ipsa.</p>
-                        <a href="">find out more</a>
+                        <a class="button" href="#">find out more</a>
                     </div>
                 
                     <div>
@@ -71,47 +66,62 @@
         
         <!-- Main section 3 ............................................ -->
         <section class="main-s3">
-            <div class="main-s3-flex wrapper">
+            <div class="wrapper">
                 <ul>
                     <li>
-                        <div>
-                            <div><span class="fas fa-home" role="img" aria-hidden="true"></span></div>
+                        <div class="main-s3-icon">
+                            <div>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-home fa-stack-1x fa-inverse" role="img" aria-hidden="true"></i>
+                                </span>
+                            </div>
                         </div>
-                        <div>
-                            <h5>Beach houses</h5>
+                        <div class="main-s3-txt">
+                            <h4>Beach houses</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit dolores officiis! Repellendus cum
                                 necessitatibus vero quibusdam, impedit ipsam in. Voluptate itaque cum expedita voluptates!</p>
                         </div>
                     </li>
                     
                     <li>
-                        <div>
-                            <div><span class="fas fa-users" role="img" aria-hidden="true"></span></div>
+                        <div class="main-s3-icon">
+                            <div>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-users fa-stack-1x fa-inverse" role="img" aria-hidden="true"></i>
+                                </span>
+                            </div>
                         </div>
-                        <div>
-                            <h5>Community</h5>
+                        <div class="main-s3-txt">
+                            <h4>Community</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque quidem deserunt sunt
                                 accusantium pariatur, modi inventore esse laudantium laboriosam dolor animi quam maiores natus!</p>
                         </div>
                     </li>
                     
                     <li>
-                        <div>
-                            <div><span class="fas fa-file" role="img" aria-hidden="true"></span></div>
+                        <div class="main-s3-icon">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-file fa-stack-1x fa-inverse" role="img" aria-hidden="true"></i>
+                            </span>
                         </div>
-                        <div>
-                            <h5>Blog</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptates ea. Et sapiente animi unde
-                                praesentium ipsam cum harum reprehenderit, corrupti expedita aliquid molestiae suscipit?</p>
+                        <div class="main-s3-txt">
+                            <h4>Blog</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptates ea. Et sapiente animi unde praesentium ipsam cum harum reprehenderit, corrupti expedita aliquid molestiae suscipit?</p>
                         </div>
                     </li>
                     
                     <li>
-                        <div>
-                            <div><span class="fas fa-phone" role="img" aria-hidden="true"></span></div>
+                        <div class="main-s3-icon">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-phone fa-stack-1x fa-inverse" role="img" aria-hidden="true"></i>
+                            </span>
                         </div>
-                        <div>
-                            <h5>Get in Touch</h5>
+                        <div class="main-s3-txt">
+                            <h4>Get in Touch</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, praesentium? Soluta, ut saepe. Id
                                 illo tempore autem. Consequatur eaque explicabo, harum ducimus accusamus cumque veniam?</p>
                         </div>
@@ -122,49 +132,36 @@
         
         <!-- Main section 4 ............................................ -->
         <section class="main-s4">
-            <div class="wrapper">
-                <div class=main-s4-s1>
-                    <div>
-                        <img src="./assets/left-image.jpg" alt="Worm's eye view of colourful beach home">
-                    </div>
-                    
-                    <div>
-                        <h4>Plan ahead</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minima, id facilis, dolores rem quasi
-                            modi magnam natus ipsam, saepe laboriosam. Possimus dignissimos libero iusto.</p>
-                        <a href="">read more</a>
-                    </div>
-                </div>
+            <div class="main-s4-s1">
+                <img src="./assets/left-image.jpg" alt="Worm's eye view of colourful beach home">
+                <h3>New locations</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, facere, saepe quibusdam, nisi accusantium magni
+                    magnam voluptas quo sequi ipsam tempora cupiditate. Aliquid, tempora minima?</p>
+                <a class="button" href="#">read more</a>
                 
-
-                <div class="main-s4-s2">
-                    <div>
-                        <img src="./assets/right-image.jpg" alt="Small beach on rocky coast">
-                    </div>
-                
-                    <div>
-                        <h4>New locations</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, facere, saepe quibusdam, nisi accusantium
-                            magni magnam voluptas quo sequi ipsam tempora cupiditate. Aliquid, tempora minima?</p>
-                        <a href="">read more</a>
-                    </div>
-                </div>
             </div>
-        
+            
+            <div></div>
+
+            <div class="main-s4-s2">
+                <h3>Plan ahead</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minima, id facilis, dolores rem quasi modi magnam
+                    natus ipsam, saepe laboriosam. Possimus dignissimos libero iusto.</p>
+                <a class="button" href="#">read more</a>
+                <img src="./assets/right-image.jpg" alt="Small beach on rocky coast">
+            </div>
             
         </section>
         
         <!-- Main section 5 ............................................ -->
-        <section class="main-s5"></section>
-        
-        <!-- Main section 6 ............................................ -->
-        <section class="main-s6">
-            <div class="wrapper">
-                <h4>Free trip with Beachstays</h4>
+        <section class="main-s5">
+            <img src="./assets/banner-image.jpg" alt="Bird's eye view of beach front">
+            <div class="main-s5-txt wrapper">
+                <h3>Free trip with Beachstays</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi reprehenderit tempore doloribus,
                     saepe id deserunt corrupti. Ab at architecto explicabo! Praesentium excepturi quos dolorum aut libero. Velit
                     tenetur magni quisquam, animi inventore atque sunt obcaecati, harum aliquam voluptatibus tempora.</p>
-                <a href="">find out more</a>
+                <a class="button" href="#">find out more</a>
             </div>
         </section>
     
