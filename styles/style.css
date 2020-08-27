@@ -417,6 +417,16 @@ header .logo-and-nav ul li li a {
   padding-left: 40px;
 }
 
+footer {
+  background-color: #2C2D2C;
+}
+
+footer p {
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+}
+
 .home-header {
   background-image: url(../assets/home-image-1.jpg);
   background-size: cover;
@@ -457,6 +467,35 @@ header .logo-and-nav ul li li a {
   bottom: -50px;
   left: 0%;
   z-index: 10;
+}
+
+.blog-header {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.blog-header .wrapper {
+  height: 100%;
+}
+
+.blog-header .wrapper h2 {
+  text-align: left;
+  color: #FFF;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25%;
 }
 
 .home-main .main-s1 {
@@ -611,4 +650,57 @@ header .logo-and-nav ul li li a {
 
 .main-s5 .main-s5-txt p {
   padding: 15px 0;
+}
+
+.blog-main-s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-main-s1 .blog-main-s1-section {
+  width: 55%;
+  position: relative;
+  top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 4px solid #50E3C2;
+  border-bottom: 4px solid #50E3C2;
+}
+
+.blog-main-s1 .blog-main-s1-section img {
+  -webkit-box-shadow: 20px 20px #50E3C2;
+          box-shadow: 20px 20px #50E3C2;
+  margin-right: 25px;
+}
+
+.blog-main-s1 .blog-main-s1-section .blog-main-s1-section-txt {
+  padding: 75px 50px 50px 0px;
+  margin-left: 100px;
+}
+
+.blog-main-s1 .blog-main-s1-section .blog-main-s1-section-txt p {
+  padding: 10px 0;
+}
+
+.blog-main-s1 .blog-main-s1-aside {
+  width: 25%;
+  padding-top: 100px;
+}
+
+.blog-main-s1 .blog-main-s1-aside ul li::before {
+  content: "\2022";
+  color: #50E3C2;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0.5em;
 }

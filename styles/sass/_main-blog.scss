@@ -1,0 +1,59 @@
+.blog-main-s1 {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .blog-main-s1-section {
+        width: 55%;
+        position: relative;
+        top: -100px;
+        display: flex;
+        flex-direction: column;
+        border-right: 4px solid $shadowBox;
+        border-bottom: 4px solid $shadowBox;
+        
+
+        img {
+            box-shadow: 20px 20px $shadowBox;
+            margin-right: 25px;
+        }
+
+        .blog-main-s1-section-txt {
+            padding: 75px 50px 50px 0px;
+            margin-left: 100px;
+            
+            p {
+                padding: 10px 0;
+            }
+
+            
+
+
+
+        }
+        
+    }
+    
+    // .empty {
+    //     width: 5%; 
+    // }
+    
+    .blog-main-s1-aside {
+        width: 25%;
+        padding-top: 100px;
+
+        // ul {
+        //         list-style: circle;
+        //         list-style-position: inside;
+        //     }
+        // code credit: https://www.w3schools.com/howto/howto_css_bullet_color.asp
+        ul li::before {
+                content: "\2022"; 
+                color: #50E3C2; 
+                font-weight: bold; 
+                display: inline-block; 
+                width: 1em; 
+                margin-left: 0.5em;
+            }
+    }
+}
