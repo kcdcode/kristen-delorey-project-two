@@ -25,14 +25,8 @@
             p {
                 padding: 10px 0;
             }
-
-            
-
-
-
-        }
-        
-    }
+    }       
+}
     
     // .empty {
     //     width: 5%; 
@@ -42,11 +36,6 @@
         width: 25%;
         padding-top: 100px;
 
-        // ul {
-        //         list-style: circle;
-        //         list-style-position: inside;
-        //     }
-        // code credit: https://www.w3schools.com/howto/howto_css_bullet_color.asp
         ul li::before {
                 content: "\2022"; 
                 color: #50E3C2; 
@@ -57,3 +46,31 @@
             }
     }
 }
+
+.blog-main-s2 {
+    padding-right: 50%;
+
+    p.blog-comments-title {
+        text-align: center;
+    }
+    
+    .blog-comments-1 {
+        display: flex;
+        .blog-comments-1-img {
+            width: 20%;
+        }
+        .blog-comments-1-txt {
+            width: 80%;
+        }
+    }
+    
+    .blog-comments-2 {
+        display: flex;
+        .blog-comments-2-img {
+            width: 20%;
+        }
+        .blog-comments-2-txt {
+            width: 80%;
+        }
+    }
+}   
