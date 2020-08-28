@@ -7,34 +7,45 @@
 h1 {
     font-size: 7rem;
     font-family: 'Playfair Display SC', serif;
+    color: $colour2;
+    font-style: italic;
 }
 
-.small-h1 {
+h1.small-home-title {
     font-size: 6.2rem;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     line-height: 58px;
     letter-spacing: 6.7px;
+    font-style: normal;
+    color: $colour3;
 }
 
-h2 {
+h1.blog-page-title,
+h1.contact-page-title {
     font-size: 8.7rem;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+    font-style: normal;
     line-height: 58px;
     letter-spacing: 9px;
     color: #FFF;
 }
 
-h3 {
+h2 {
     font-size: 3rem;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     line-height: 58px;
     letter-spacing: 3.8px;
+    color: $colour3;
 }
 
-h4 {
+.main-s4 h2 {
+    color: $colour2;
+}
+
+h3 {
     font-size: 2.5rem;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -95,9 +106,15 @@ button {
     }
 } 
 
-span a {
-    font-size: 2rem;
+a span {
+    font-size: 3rem;
     display: inline-block;
+    font-size: 3rem;
+    color: $colour4;
+}
+
+a.menu {
+    color: $colour1;
 }
 
 form {

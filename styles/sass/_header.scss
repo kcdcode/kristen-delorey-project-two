@@ -1,3 +1,4 @@
+// Global header styles ............................................
 header {
     padding-top: 20px;
 
@@ -17,6 +18,10 @@ header {
                 }
             }
         }
+
+        .menu {
+            display: none;
+        }
     }
 }
 
@@ -26,7 +31,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 75vh;
     position: relative;
 
     .wrapper {
@@ -44,21 +49,20 @@ header {
             h1 {
                 z-index: 20;
                 position: relative;
-                color: $colour2;
-                font-style: italic;
+                
             }
 
-            .small-h1 {
+            .small-home-title {
                 z-index: 20;
                 position: relative;
-                color: $colour3;
             }
         }  
 
         img {
-            width: 50%;
+            width: auto;
+            max-height: 550px;
             position: absolute;
-            bottom: -50px;
+            bottom: -100px;
             left: 0%;
             z-index: 10;
         }
@@ -71,12 +75,12 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 50vh;
 
     .wrapper {
         height: 100%;
             
-        h2 {
+        h1.blog-page-title {
             text-align: left;
             height: 100%;
             display: flex;
@@ -93,12 +97,12 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 50vh;
 
     .wrapper {
         height: 100%;
             
-        h2 {
+        h1.contact-page-title {
             text-align: left;
             height: 100%;
             display: flex;
