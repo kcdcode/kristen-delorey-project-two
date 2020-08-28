@@ -1,3 +1,25 @@
+header {
+    padding-top: 20px;
+
+        .logo-and-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+
+            ul {
+                display: flex;
+                    
+                li {
+                    margin-left: 40px;
+                    
+                    li a {
+                        padding-left: 20px;
+                }
+            }
+        }
+    }
+}
+
 // Home header styles ............................................
 .home-header {
     background-image: url(../assets/home-image-1.jpg);
@@ -7,34 +29,43 @@
     height: 100vh;
     position: relative;
 
-        .wrapper {
+    .wrapper {
+        height: 100%;
+        
+        .header-txt {
+            text-align: left;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 0 5% 45%;
             
-                .header-txt {
-                    text-align: left;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    padding: 0 0 5% 45%;
-                    
 
-                    h1 {
-                        z-index: 20;
-                        position: relative;
-                        }
-                }  
+            h1 {
+                z-index: 20;
+                position: relative;
+                color: $colour2;
+                font-style: italic;
+            }
 
-                img {
-                    width: 50%;
-                    position: absolute;
-                    bottom: -50px;
-                    left: 0%;
-                    z-index: 10;
-                }
-            }    
-    }
-    
+            .small-h1 {
+                z-index: 20;
+                position: relative;
+                color: $colour3;
+            }
+        }  
+
+        img {
+            width: 50%;
+            position: absolute;
+            bottom: -50px;
+            left: 0%;
+            z-index: 10;
+        }
+    }    
+}
+
+// Blog header styles ............................................
 .blog-header {
     background-image: url(../assets/blog-image-1.jpg);
     background-size: cover;
@@ -45,46 +76,35 @@
     .wrapper {
         height: 100%;
             
-            h2 {
-                text-align: left;
-                color: #FFF;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding-top: 25%;
-            }    
-        }
+        h2 {
+            text-align: left;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 20%;
+        }    
     }
+}
 
-    
+// Contact header styles ............................................
+.contact-header {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 
-    // .home-heading {
-    //     height: 100%;
-
-    //     .header-txt {
-    //         width: 100%;
-    //         border: red 2px solid;
-    //     }
-
-    //     .header-img {
-    //         width: 100%;
-    //         display: flex;
-    //         justify-content: flex-end;
-    //         position: relative;
-    //         bottom: 450px;
-    //         img {
-    //             width: 800px;
-    //         }
-    //     }
-    // }
-    
-
-
-
-// h1,
-        // .small-h1 {
-        //     position: absolute;
-        //     z-index: 10;
-        //     margin-top: -70px;
-        // }
+    .wrapper {
+        height: 100%;
+            
+        h2 {
+            text-align: left;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 20%;
+        }    
+    }
+}

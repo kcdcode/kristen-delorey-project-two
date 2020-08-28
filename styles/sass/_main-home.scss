@@ -12,6 +12,7 @@
                 
                 h3 {
                     padding-bottom: 15px;
+                    color: $colour3;
                 }
 
                 p {
@@ -20,12 +21,10 @@
             }
             
                 img {
-                    box-shadow: -20px 20px $shadowBox;
+                    box-shadow: -20px 20px $colour1;
                 }  
-            }        
-        }
+        }        
     }
-
     .main-s2 {
         background-color: $secondaryBackgroundColor;
 
@@ -43,7 +42,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 35px;
-            padding: 100px 0;
+            padding: 75px 0;
             
             li {
                 display: grid;
@@ -59,7 +58,7 @@
                                     color: #50E3C2;
                             }
                                 .fa-stack-1x {
-                                color: #FFF;
+                                    color: #FFF;
                             }
                         }
             }
@@ -71,6 +70,10 @@
         display: grid;
         grid-template-columns: 3fr 1fr 3fr;
 
+        h3 {
+            color: $colour2;
+        }
+
         .main-s4-s1 { 
             display: flex;
             flex-direction: column;
@@ -80,7 +83,7 @@
             img {
                 position: relative;
                 top: -50px;
-                box-shadow: 20px 20px $shadowBox;
+                box-shadow: 20px 20px $colour1;
             }
 
             p {
@@ -99,11 +102,11 @@
             img {
                 position: relative;
                 bottom: -50px;
-                box-shadow: -20px 20px $shadowBox;
+                box-shadow: -20px 20px $colour1;
             }
 
             p {
-                max-width: 550px;
+                max-width: 450px;
                 padding: 20px 0;
             }
         }
@@ -118,10 +121,15 @@
             padding: 100px 150px;
             text-align: center;
 
+            h3 {
+                color: $colour3;
+            }
+
             p {
                 padding: 15px 0;
             }
         }
-
-        
     }
+}
+
+    

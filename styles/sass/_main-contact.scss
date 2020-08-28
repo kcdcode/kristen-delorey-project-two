@@ -1,0 +1,44 @@
+.contact-main {
+    background: $primaryBackgroundColor;
+
+    .contact-container {
+        display: flex;
+        align-items: center;
+
+        form {
+            width: 70%;
+            position: relative;
+            top: -100px;
+            padding: 0 20px;
+            box-shadow: 20px 20px $colour1;
+        }
+
+        .contact-txt {
+            width: 30%;
+            margin-left: 100px;
+
+            ul {
+                display: flex;
+                align-content: center;
+
+                li {
+                    margin: 0 20px 20px 0;
+                    
+                    a {
+                        padding: 20px 20px 20px 0;
+
+                        span {
+                            font-size: 3rem;
+                            color: $colour4;
+                        }
+                    }
+                }
+            }
+
+            p.email {
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}        
