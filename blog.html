@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beachstays blog page</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
-        rel="stylesheet">
+    
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
 <body>
     <!-- Header seciton ............................................ -->
     <header class="blog-header">
         <div class="wrapper">
             
-            <!-- Logo and nav section ............................................ -->
-            <div class="logo-and-nav">
+            <!-- Logo and menu ............................................ -->
+            <nav>
                 <a class="logo" href="#">beachstays</a>
+                <a class="menu" href="#"><span class="fa fa-bars" aria-label="drop-down menu"></span></a></li>
+            
                 <ul>
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="./blog.html">blog</a></li>
-                    <li><a href="./contact.html">contact</a></li>
+                    <li><a href="./index.html" role="link">home</a></li>
+                    <li><a href="#" role="link">about</a></li>
+                    <li><a href="./blog.html" role="link">blog</a></li>
+                    <li><a href="./contact.html" role="link">contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
             <!-- Page title ............................................ -->
-            <h1 class="blog-page-title">Blog</h1>
+            <div class="title-container-2">
+                <h1 class="blog-page-title">Blog</h1>
+            </div>
+        
         </div>
     </header>
     
@@ -34,31 +43,38 @@
     <main class="blog-main">
         <!-- Main section 1 ............................................ -->
         <section class="blog-main-s1">
-            <div class="blog-main-s1-section">
+
+            <!-- Blog post ............................................ -->
+            <div class="blog-main-post">
+                
                 <div>
                     <img src="./assets/post-image.jpg" alt="Walkway up to beach home">
                 </div>
-
-                <div class="blog-main-s1-txt">
+            
+                <div class="blog-txt">
                     <h2>Five days of ocean seas</h2>
                     <p class="blog-date">Monday January 21st, 2019 by Bora</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero sequi vitae, esse eum laboriosam
-                    exercitationem accusantium corporis aliquam optio expedita reiciendis nobis veniam rem repellat voluptatibus
-                    perferendis earum aliquid autem in. Voluptates, minima eum.</p>
+                        exercitationem accusantium corporis aliquam optio expedita reiciendis nobis veniam rem repellat voluptatibus
+                        perferendis earum aliquid autem in. Voluptates, minima eum.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ratione id esse mollitia cupiditate, odio corporis
-                    tempora perspiciatis quibusdam repellat pariatur excepturi facere qui et modi atque fugiat, sunt quos ullam
-                    aspernatur illum maxime aperiam!</p>
+                        tempora perspiciatis quibusdam repellat pariatur excepturi facere qui et modi atque fugiat, sunt quos ullam
+                        aspernatur illum maxime aperiam!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quisquam hic rem unde ab minus,
-                    perspiciatisad perferendis saepe maiores, esse modi accusamus velit non mollitia est! Soluta nobis culpa odit, reiciendis cumque ducimus esse qui nihil eius similique cum perferendis itaque, maxime dolorum laudantium porro dolorem
-                    vero quod sequi quisquam eaque! Cum, maiores accusamus incidunt illum aut sit praesentium aperiam nam nihil harum
-                    molestiae corrupti ad, culpa quia ea? Veritatis quaerat ipsum accusamus iure.</p>
+                        perspiciatisad perferendis saepe maiores, esse modi accusamus velit non mollitia est! Soluta nobis culpa odit,
+                        reiciendis cumque ducimus esse qui nihil eius similique cum perferendis itaque, maxime dolorum laudantium porro
+                        dolorem
+                        vero quod sequi quisquam eaque! Cum, maiores accusamus incidunt illum aut sit praesentium aperiam nam nihil
+                        harum
+                        molestiae corrupti ad, culpa quia ea? Veritatis quaerat ipsum accusamus iure.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti accusamus, doloribus modi magni repellat
-                    hic molestias quidem inventore sequi! Quo in perspiciatis aperiam porro?</p>
+                        hic molestias quidem inventore sequi! Quo in perspiciatis aperiam porro?</p>
                 </div>
                 
             </div>
-            
-            <div class="blog-main-s1-aside">
+
+            <!-- Aside content ............................................ -->
+            <div class="blog-main-aside">
 
                     <div>
                         <img src="./assets/sidebar-image.jpg" alt="Side view of beach homes along shoreline">
@@ -86,15 +102,15 @@
         <!-- Main section 2 ............................................ -->
         <section class="blog-main-s2">
             <div class="wrapper">
-                <p class="blog-comments-title">Comments:</p>
+                <p class="blog-comments-heading">Comments:</p>
                 
                 <div class="blog-comments-1">
-                    <div class="blog-comments-1-img">
+                    <div class="blog-comments-img">
                         <img src="./assets/comment-image.jpg" alt="Profile picture">
                     </div>
                     
-                    <div class="blog-comments-1-txt">
-                        <p class="blog-comments-1-title">Tuesday October 9th, 2019 by Reynash</p>
+                    <div class="blog-comments-txt">
+                        <p class="blog-comments-title">Tuesday October 9th, 2019 by Reynash</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde dolor quia architecto beatae
                             mollitia, incidunt, eos tenetur vitae eligendi deleniti accusantium in quam quae voluptatem laudantium.
                             Illum, totam nemo.</p>
@@ -103,17 +119,17 @@
                 
                     
                 <div class="blog-comments-2">
-                    <div class="blog-comments-2-img">
+                    <div class="blog-comments-img">
                         <img src="./assets/comment-image2.jpg" alt="Profile picture">
                     </div>
-                    <div class="blog-comments-2-txt">
-                        <p class="blog-comments-2-title">Wednesday October 10th 2019 by Olivia</p>
+                    <div class="blog-comments-txt">
+                        <p class="blog-comments-title">Wednesday October 10th 2019 by Olivia</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores quos similique dolore! Et
                             corrupti modi reiciendis tenetur necessitatibus laboriosam!</p>
                     </div>
                 </div>
 
-                <form>
+                <form class="form-1">
                     <div class="name-and-email">
                         <label for="name"></label>
                         <input type="name" id="name" placeholder="Name">

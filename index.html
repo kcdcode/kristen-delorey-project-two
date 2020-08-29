@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beachstays homepage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Offside&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ad4f31f59a.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/ad4f31f59a.js" crossorigin="anonymous"></script>
+
+    
 </head>
 <body>
     <!-- Skip link seciton ............................................ -->
@@ -15,29 +21,29 @@
     
     <!-- Header seciton ............................................ -->
     <header class="home-header">
-        <div class="wrapper">
+        <div class="header-nav wrapper">
             
-            <!-- Logo and nav section ............................................ -->
-            <div class="logo-and-nav">
+            <!-- Logo and menu ............................................ -->
+            <nav>
                 <a class="logo" href="#">beachstays</a>
+                <a class="menu" href="#"><span class="fa fa-bars" aria-label="drop-down menu"></span></a></li>
                 
                 <ul>
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="./blog.html">blog</a></li>
-                    <li><a href="./contact.html">contact</a></li>
+                    <li><a href="./index.html" role="link">home</a></li>
+                    <li><a href="#" role="link">about</a></li>
+                    <li><a href="./blog.html" role="link">blog</a></li>
+                    <li><a href="./contact.html" role="link">contact</a></li>
                 </ul>
-
-                <a class="menu" href="#"><span class="fab bars" aria-label="drop-down menu"></span></a></li>
-            </div>
+            </nav>
             
             <!-- Page title and image............................................ -->
-            <div class="header-txt">
+            <div class="title-container-1">
                 <h1 class="small-home-title">welcome to</h1>
-                <h1>beachstays</h1>
+                <h1><span>b</span>eachstays</h1>
             </div>
             
             <img src="./assets/header-box.jpg" alt="Sunglasses on beach sand">           
+        
         </div>
     </header>
     
@@ -45,28 +51,29 @@
     <main class="home-main" id="main-content">
         <!-- Main section 1 ............................................ -->
         <section class="main-s1">
-                <div class="main-s1-flex wrapper">
-                    <div class="main-s1-txt">
-                        <h2>Visit Guyana</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis unde ducimus laboriosam porro impedit quia
-                            odio, asperiores facilis dolorem pariatur ab voluptates cum at obcaecati accusantium a vero vitae
-                            debitis. Ex, minus nesciunt mollitia vitae at dicta vel officia? Ipsam modi minima placeat mollitia
-                            perferendis repellat facere maiores voluptatum ipsa.</p>
-                        <a class="button" href="#">find out more</a>
-                    </div>
+            <div class="main-s1-flex wrapper">
                 
-                    <div>
-                        <img src="./assets/small-box.jpg" alt="Indoor lounge space with water view">
-                    </div>
+                <div class="main-s1-txt">
+                    <h2>Visit Guyana</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quia quas quam. Ducimus sed, aut, cupiditate magni iusto aperiam incidunt similique eum alias voluptate quas ipsa sapiente est nostrum neque illo? Ipsum, labore asperiores laborum qui excepturi explicabo, earum autem modi ducimus cum error quia, sequi itaque! Minima quae id sed consequatur quod, explicabo omnis voluptatum ab accusantium quos accusamus dolor inventore in dicta architecto?</p>
+                    <a class="button" href="#">find out more</a>
                 </div>
+            
+                <div>
+                    <img src="./assets/small-box.jpg" alt="Indoor lounge space with water view">
+                </div>
+            </div>
         </section>
         
         <!-- Main section 2 ............................................ -->
         <section class="main-s2">
             <div class="main-s2-flex wrapper">
-                <img src="./assets/gallery-image1.jpg" alt="Side view of beach homes along shoreline">
-                <img src="./assets/gallery-image2.jpg" alt="Walkway up to beach home">
-                <img src="./assets/gallery-image3.jpg" alt="Front view of beach home on shoreline">
+                <div class="img-container"><img src="./assets/gallery-image1.jpg" alt="Side view of beach homes along shoreline"></div>
+                <div class="img-container"><img src="./assets/gallery-image2.jpg" alt="Walkway up to beach home"></div>
+                <div class="img-container"><img src="./assets/gallery-image3.jpg" alt="Front view of beach home on shoreline"></div>
+                
+                
+                
             </div>
         </section>
         

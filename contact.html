@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beachstays contact page</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ad4f31f59a.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/ad4f31f59a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -16,26 +20,32 @@
     <header class="contact-header">
         <div class="wrapper">
 
-            <!-- Logo and nav section ............................................ -->
-            <div class="logo-and-nav">
+            <!-- Logo and menu ............................................ -->
+            <nav>
                 <a class="logo" href="#">beachstays</a>
+                <a class="menu" href="#"><span class="fa fa-bars" aria-label="drop-down menu"></span></a></li>
+            
                 <ul>
                     <li><a href="./index.html" role="link">home</a></li>
-                    <li><a href="#" role="img">about</a></li>
-                    <li><a href="./blog.html" role="img">blog</a></li>
-                    <li><a href="./contact.html" role="img">contact</a></li>
+                    <li><a href="#" role="link">about</a></li>
+                    <li><a href="./blog.html" role="link">blog</a></li>
+                    <li><a href="./contact.html" role="link">contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
             <!-- Page title ............................................ -->
-            <h1 class="contact-page-title">Get in Touch</h1>
+            <div class="title-container-2">
+                <h1 class="contact-page-title">Get in Touch</h1>
+            </div>
+
         </div>
     </header>
 
     <!-- Main section ............................................ -->
     <main class="contact-main">
         <div class="contact-container wrapper">
-            <form>
+            
+            <form class="form-2">
                 <div class="name-and-email">
                     
                     <label for="name"></label>
@@ -56,10 +66,10 @@
         
             <div class="contact-txt">
                 <ul>
-                    <li><a href="#"><span class="fab fa-facebook-f" aria-label="visit our facebook"></span></a></li>
-                    <li><a href="#"><span class="fab fa-instagram" aria-label="visit our instagram"></a></span></li>
-                    <li><a href="#"><span class="fab fa-twitter" aria-label="visit our twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-whatsapp" aria-label="visit our snapchat"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-f" role="link" aria-label="visit our facebook"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram" role="link" aria-label="visit our instagram"></a></span></li>
+                    <li><a href="#"><span class="fab fa-twitter" role="link" aria-label="visit our twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-whatsapp" role="link" aria-label="visit our snapchat"></span></a></li>
                 </ul>
                 
                 <p class="email">info@email.com</p>

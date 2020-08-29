@@ -5,34 +5,47 @@
         .main-s1-flex {
             display: flex;
             justify-content: space-between;
-            padding: 100px 0;
+            padding: 175px 0 125px 0;
 
             .main-s1-txt {
-                width: 50%;
+                width: 60%;
                 
                 h2 {
-                    padding: 75px 0 15px 0;
+                    padding: 35px 0 15px 0;
                     color: $colour3;
                 }
 
                 p {
-                    padding-bottom: 10px;
+                    padding-bottom: 25px;
                 }
             }
             
-                img {
-                    box-shadow: -20px 20px $colour1;
-                }  
+            img {
+                box-shadow: -20px 20px $colour1;
+            }  
         }        
     }
+
     .main-s2 {
         background-color: $secondaryBackgroundColor;
+        padding: 100px 0;
 
         .main-s2-flex {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px; 
-            padding: 100px 0;
+
+            .img-container {
+                overflow: hidden;
+                
+                img {
+                    transition: transform .5s ease;
+                
+                    &:hover, &:focus {
+                        transform: scale(1.15);
+                    }
+                }
+            }
         }
     }
 
@@ -42,7 +55,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 35px;
-            padding: 75px 0;
+            padding: 75px 0 125px 0;
             
             li {
                 display: grid;
@@ -52,15 +65,7 @@
                     padding-top: 8px;
                 }
 
-                span {
-                            font-size: 2rem;
-                                .fa-stack-2x {
-                                    color: #50E3C2;
-                            }
-                                .fa-stack-1x {
-                                    color: #FFF;
-                            }
-                        }
+                
             }
         }        
     }
@@ -87,7 +92,7 @@
                 max-width: 450px;
                 padding: 20px 0;
             }
-        }
+    }
 
         .main-s4-s2 { 
             display: flex;

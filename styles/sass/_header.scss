@@ -1,11 +1,14 @@
-// Global header styles ............................................
+// Global header  ............................................
 header {
-    padding-top: 20px;
+    .wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
 
-        .logo-and-nav {
+        nav {
             display: flex;
             justify-content: space-between;
-            padding: 20px 0;
+            padding: 30px 0;
 
             ul {
                 display: flex;
@@ -15,100 +18,73 @@ header {
                     
                     li a {
                         padding-left: 20px;
+                    }
                 }
             }
         }
-
-        .menu {
-            display: none;
+        
+        .title-container-1,
+        .title-container-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
         }
     }
 }
 
-// Home header styles ............................................
+// Home header ............................................
 .home-header {
     background-image: url(../assets/home-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 75vh;
+    height: 80vh;
     position: relative;
 
-    .wrapper {
-        height: 100%;
-        
-        .header-txt {
-            text-align: left;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 0 5% 45%;
-            
+    .title-container-1 {
+        padding-left: 350px;
 
-            h1 {
-                z-index: 20;
-                position: relative;
-                
-            }
-
-            .small-home-title {
-                z-index: 20;
-                position: relative;
-            }
-        }  
-
-        img {
-            width: auto;
-            max-height: 550px;
-            position: absolute;
-            bottom: -100px;
-            left: 0%;
-            z-index: 10;
+        h1,
+        .small-home-title {
+            z-index: 20;
+            position: relative;
         }
-    }    
-}
+    }
 
-// Blog header styles ............................................
+    img {
+        width: auto;
+        max-height: 550px;
+        position: absolute;
+        bottom: -100px;
+        left: -4%;
+        z-index: 10;
+    }      
+}  
+
+// Blog header ............................................
 .blog-header {
     background-image: url(../assets/blog-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    height: 65vh;
 
-    .wrapper {
-        height: 100%;
-            
-        h1.blog-page-title {
-            text-align: left;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-top: 20%;
-        }    
+    .title-container-2 h1 {
+        padding-top: 50px; 
     }
 }
 
-// Contact header styles ............................................
+
+// Contact header  ............................................
 .contact-header {
     background-image: url(../assets/contact-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
-
-    .wrapper {
-        height: 100%;
-            
-        h1.contact-page-title {
-            text-align: left;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-top: 20%;
-        }    
+    height: 70vh;
+    
+    h1 {
+        padding-top: 75px;
     }
 }
