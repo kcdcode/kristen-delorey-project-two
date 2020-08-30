@@ -124,13 +124,12 @@ nav {
 } 
 
 a.menu {
-    // font-size: 3rem;
-    // color: #FFF;
+    font-size: 3rem;
+    color: #FFF;
 
-    // &:hover, &:focus {
-    //     color: $colour1;
-    // }
-    display: none;
+    &:hover, &:focus {
+        color: $colour1;
+    }
 }
 
 .aside-txt a {
