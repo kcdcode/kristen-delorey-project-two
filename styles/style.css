@@ -476,11 +476,12 @@ form .name-and-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 30px 0;
 }
 
@@ -958,8 +959,6 @@ header .wrapper .title-container-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .contact-main .contact-container .contact-txt ul li {
@@ -1129,5 +1128,36 @@ header .wrapper .title-container-2 {
   }
   .blog-main .blog-main-s1 .blog-main-aside {
     width: 35%;
+  }
+  .blog-main .blog-main-s2 .wrapper {
+    padding-right: 0px;
+  }
+  .contact-main .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contact-main .contact-container form {
+    width: 100%;
+    top: -50px;
+    left: 0px;
+  }
+  .contact-main .contact-container .contact-txt {
+    width: 100%;
+    margin: 25px 0 50px 0;
+  }
+  .contact-main .contact-container .contact-txt ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 25px;
+  }
+  .contact-main .contact-container .contact-txt ul li {
+    margin-right: 0px;
+  }
+  .contact-main .contact-container .contact-txt ul li a {
+    padding: 0 30px;
   }
 }
