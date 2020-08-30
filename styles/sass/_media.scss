@@ -1,0 +1,92 @@
+// Portrait tablet and small desktops ............................................
+@media (max-width: 940px) {
+    header {            
+        .wrapper nav {
+            padding: 50px 0;
+                
+            ul li {
+                margin-left: 20px;
+                
+                a {
+                    padding-left: 10px;
+                }
+            }
+        } 
+    }
+    
+    .home-header  {
+        height: 75vh;
+        .title-container-1 {
+            padding: 0px;
+        }
+        
+        img {
+            display: none;
+        }
+    }
+
+    .home-main {
+        .home-main-s1 .home-main-s1-flex {
+            flex-direction: column;
+            text-align: center;
+            padding: 75px 0;
+            align-items: center;
+        
+            .home-main-s1-txt {
+                width: 100% !important;
+                margin-top: 40px;
+            }
+
+            .home-main-s1-img {
+                order: -1;
+                width: 60%;
+                
+            }
+        }
+
+        .home-main-s3 {
+            ul {
+                gap: 80px;
+            }
+        }
+
+        .home-main-s4 {
+            .home-main-s4-s1 p,
+            .home-main-s4-s2 p, {
+                max-width: 350px;
+            }
+        }
+
+        .home-main-s5 {
+            .home-main-s5-txt {
+                padding: 75px 0px;
+            }
+        }
+    }
+
+    .blog-main {
+        .blog-main-s1 {
+            .blog-main-post {
+                .blog-txt {
+                    padding-left: 70px;
+                }
+            }
+
+            .blog-main-aside {
+                width: 35%;
+            }
+        }
+    }
+}
+        
+            
+
+// Landscape phone to portrait tablet ............................................
+// @media (max-width: 768px) {
+
+// }
+
+// Landscape phones and down ............................................
+// @media (max-width: 480px) {
+//     h1 - line height: 45px 
+// }

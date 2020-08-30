@@ -16,7 +16,7 @@ header {
                 li {
                     margin-left: 40px;
                     
-                    li a {
+                    a {
                         padding-left: 20px;
                     }
                 }
@@ -39,7 +39,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: 85vh;
     position: relative;
 
     .title-container-1 {
@@ -71,20 +71,20 @@ header {
     height: 65vh;
 
     .title-container-2 h1 {
-        padding-top: 50px; 
+        padding-top: 10px; 
     }
 }
 
 
-// Contact header  ............................................
+// Contact header ............................................
 .contact-header {
     background-image: url(../assets/contact-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70vh;
+    height: 65vh;
     
     h1 {
-        padding-top: 75px;
+        padding-top: 10px;
     }
 }

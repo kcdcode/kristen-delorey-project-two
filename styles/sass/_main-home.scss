@@ -1,13 +1,13 @@
 .home-main {
-    .main-s1 {
+    .home-main-s1 {
     background-color: $primaryBackgroundColor;
         
-        .main-s1-flex {
+        .home-main-s1-flex {
             display: flex;
             justify-content: space-between;
             padding: 175px 0 125px 0;
 
-            .main-s1-txt {
+            .home-main-s1-txt {
                 width: 60%;
                 
                 h2 {
@@ -26,11 +26,11 @@
         }        
     }
 
-    .main-s2 {
+    .home-main-s2 {
         background-color: $secondaryBackgroundColor;
         padding: 100px 0;
 
-        .main-s2-flex {
+        .home-main-s2-flex {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px; 
@@ -49,7 +49,7 @@
         }
     }
 
-    .main-s3 {
+    .home-main-s3 {
         background-color: $primaryBackgroundColor;
         ul {
             display: grid;
@@ -61,21 +61,19 @@
                 display: grid;
                 grid-template-columns: 1fr 6fr;
                 
-                .main-s3-icon {
+                .home-main-s3-icon {
                     padding-top: 8px;
                 }
-
-                
             }
         }        
     }
 
-    .main-s4 {
+    .home-main-s4 {
         background: $secondaryBackgroundColor;
         display: grid;
         grid-template-columns: 3fr 1fr 3fr;
 
-        .main-s4-s1 { 
+        .home-main-s4-s1 { 
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -92,9 +90,9 @@
                 max-width: 450px;
                 padding: 20px 0;
             }
-    }
+        }
 
-        .main-s4-s2 { 
+        .home-main-s4-s2 { 
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -113,12 +111,12 @@
         }
     }
 
-    .main-s5 {
+    .home-main-s5 {
         img {
         background-repeat: no-repeat;
         }
 
-        .main-s5-txt {
+        .home-main-s5-txt {
             padding: 100px 150px;
             text-align: center;
 
@@ -132,5 +130,3 @@
         }
     }
 }
-
-    
