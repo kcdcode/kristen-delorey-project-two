@@ -48,12 +48,16 @@
         .home-main-s3 {
             ul {
                 gap: 80px;
+
+                li {
+                grid-template-columns: 1fr 5fr;
+                }
             }
         }
 
         .home-main-s4 {
             .home-main-s4-s1 p,
-            .home-main-s4-s2 p, {
+            .home-main-s4-s2 p {
                 max-width: 350px;
             }
         }
@@ -129,11 +133,12 @@
             ul {
                 display: none;
             }
+
             a.menu {
                 display: inline-block;
                 align-self: flex-end;
             }
-        }
+        } 
     }
     
     .home-header {
@@ -141,6 +146,16 @@
     }
 
     .home-main {
+        .home-main-s3 {
+            ul {
+                gap: 70px;
+
+                li {
+                grid-template-columns: 1fr 4fr;
+                }
+            }
+        }
+        
         .home-main-s4 {
             background: $secondaryBackgroundColor;
             display: grid;
@@ -155,10 +170,61 @@
                     width: 70%;
                 }
 
+                .main-s4-img2 {
+                    order: -1;
+                }
+
                 p, h2 {
                     text-align: center;
-                    width: 100%;
                     max-width: 500px;
+                }
+
+                h2 {
+                    margin-top: 50px;
+                }
+            }
+
+            .home-main-s4-s1 {
+                padding: 50px 0 50px 0;
+            }
+
+            .home-main-s4-s2 {
+                padding: 0px 0 50px 0;
+            }
+        }
+    }
+
+    .blog-main {
+        .blog-main-s1 {
+            .blog-main-aside {
+                display: none;
+            }
+
+            .blog-main-post {
+                width: 100%;
+                position: static;
+                padding: 50px 0;
+                
+                img {
+                    position: static;
+                    width: 85%;
+                    margin: 0 auto;
+                }
+
+                .blog-txt {
+                    border-right: none;
+                }
+            }
+        }
+
+        .blog-main-s2 .wrapper {
+            .blog-comments-2 {
+                padding-bottom: 0px;
+            }
+            
+            form {
+                .name-and-email {
+                    margin-top: 0px;
                 }
             }
         }

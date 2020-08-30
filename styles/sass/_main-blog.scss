@@ -3,7 +3,6 @@
     
     .blog-main-s1 {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: space-between;
         background-color: $primaryBackgroundColor;
         
@@ -25,8 +24,6 @@
                 padding: 75px 50px 50px 90px;
                 border-right: 4px solid $colour1;
                 border-bottom: 4px solid $colour1;
-                position: relative;
-                left: 0px;
 
                 p {
                     padding: 10px 0;
