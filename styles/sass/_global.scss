@@ -7,7 +7,7 @@
 // Headings ............................................
 h1 {
     font-size: calc(2.5rem + 5.5vw);
-    font-family: 'Playfair Display SC', serif;
+    font-family: $font1;
     color: $colour2;
     font-style: italic;
     line-height: 70px;
@@ -24,13 +24,13 @@ h1.contact-page-title,
 h2,
 h3,
 nav li a {
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 h1.small-home-title {
     font-size: calc(3.3rem + 1.7vw);
+    font-family: $font2;
     letter-spacing: 6.7px;
     color: $colour3;
 }
@@ -38,6 +38,7 @@ h1.small-home-title {
 h1.blog-page-title,
 h1.contact-page-title {
     font-size: calc(2rem + 4.7vw);
+    font-family: $font2;
     text-align: left;
     line-height: 58px;
     letter-spacing: 9px;
@@ -68,7 +69,6 @@ p,
 .blog-main-aside a,
 footer a {
     font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 2px;
@@ -107,7 +107,7 @@ a {
 
 a.logo {
     font-size: calc(1.6rem + 0.9vw);
-    font-family: 'Playfair Display SC', serif;
+    font-family: $font1;
     font-style: italic;
     color: $colour1;
 }
@@ -121,9 +121,13 @@ nav {
     color: #FFF;
 
         &:hover, &:focus {
-            color: $colour1;
-            border-bottom: $colour1 dotted 2px;
+            color: darken($color: #FFF, $amount: 25%);
+            border-bottom: darken($color: #FFF, $amount: 25%) dotted 2px;
         }
+    }
+
+    a.current {
+        color: $colour1;
     }
 
     a.menu {
@@ -150,7 +154,7 @@ button {
     background: $colour2;
     color: #FFF;
     text-transform: uppercase;
-    font-family: 'Playfair Display SC', serif;
+    font-family: $font1;
 
     &:hover, &:focus {
         color: $colour3;
@@ -212,14 +216,12 @@ form {
     textarea {
         padding: 30px;
         font-size: 1.8rem;
-        font-family: 'Lato', sans-serif;
         font-weight: 300;
         line-height: 32px;
         letter-spacing: 2px;
 
         &::placeholder {
             font-size: 1.8rem;
-            font-family: 'Lato', sans-serif;
             font-weight: 300;
             line-height: 32px;
             letter-spacing: 2px;

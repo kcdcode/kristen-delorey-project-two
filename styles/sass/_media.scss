@@ -2,7 +2,7 @@
 @media (max-width: 940px) {
     header {            
         .wrapper nav {
-            padding: 50px 0;
+            padding: 30px 0;
                 
             ul li {
                 margin-left: 20px;
@@ -137,6 +137,7 @@
                     align-self: flex-end;
                 }
             }
+
             .title-container-2 {
                 justify-content: flex-end;
             }
@@ -359,17 +360,26 @@
         }
     }
     
-    .blog-main .blog-main-s1 {
-        .blog-main-post {
-            img {
-                box-shadow: 15px 15px $colour1;
-            }
-            
-            .blog-txt {
-                padding: 50px 25px;
-            }
+    .blog-main {
+        .blog-main-s1 {
+            .blog-main-post {
+                img {
+                    box-shadow: 15px 15px $colour1;
+                }
+                
+                .blog-txt {
+                    padding: 50px 25px;
+                }
+            }    
         }
-    }
+        
+        .blog-main-s2 .wrapper {
+            form {
+                padding-top: 20px;
+            }    
+        }
+    } 
+    
 
     form {
         input[type="name"],

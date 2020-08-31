@@ -17,18 +17,20 @@
 <body>
     <!-- Header ............................................ -->
     <header class="blog-header">
+        
+        <!-- Skip link ............................................ -->
+        <a class="skip" href="#main-content" role="link">Skip to main content</a>;
         <div class="wrapper">
             
             <!-- Logo and menu ............................................ -->
             <nav>
                 <a class="logo" href="./index.html" role="link">beachstays</a>
-                <a class="menu" href="#" aria-label="drop-down menu" role="menu"><span class="fa fa-bars"
-                        aria-hidden="true"></span></a></li>
+                <a class="menu" href="#" aria-label="drop-down menu" role="menu"><span class="fa fa-bars" aria-hidden="true"></span></a>
             
                 <ul>
                     <li><a href="./index.html" role="link">home</a></li>
                     <li><a href="#" role="link">about</a></li>
-                    <li><a href="./blog.html" role="link">blog</a></li>
+                    <li><a class="current" href="./blog.html" role="link">blog</a></li>
                     <li><a href="./contact.html" role="link">contact</a></li>
                 </ul>
             </nav>
@@ -42,7 +44,7 @@
     </header>
     
     <!-- Main section ............................................ -->
-    <main class="blog-main">
+    <main class="blog-main" id="main-content">
         
         <!-- Main section 1 ............................................ -->
         <section class="blog-main-s1">

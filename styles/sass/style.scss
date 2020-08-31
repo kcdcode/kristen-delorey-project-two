@@ -1,6 +1,3 @@
-// Stripping ............................................
-@import "setup";
-
 // Variables ....................
 $primaryBackgroundColour: #FAFFFE;
 $secondaryBackgroundColour: #D2F9F1;
@@ -9,6 +6,12 @@ $colour1: #50E3C2;
 $colour2: #063974;
 $colour3: #0C5F4C;
 $colour4: #2C2C2C;
+
+$font1: 'Playfair Display SC', serif;
+$font2: 'Lato', sans-serif;
+
+// Stripping ............................................
+@import "setup";
 
 // Skip link ............................................
 // Credit for code below: https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/

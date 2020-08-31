@@ -232,6 +232,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
 }
 
 body,
@@ -294,7 +295,7 @@ a.skip:active, a.skip:focus {
 
 h1 {
   font-size: calc(2.5rem + 5.5vw);
-  font-family: 'Playfair Display SC', serif;
+  font-family: "Playfair Display SC", serif;
   color: #063974;
   font-style: italic;
   line-height: 70px;
@@ -311,13 +312,13 @@ h1.contact-page-title,
 h2,
 h3,
 nav li a {
-  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 h1.small-home-title {
   font-size: calc(3.3rem + 1.7vw);
+  font-family: "Lato", sans-serif;
   letter-spacing: 6.7px;
   color: #0C5F4C;
 }
@@ -325,6 +326,7 @@ h1.small-home-title {
 h1.blog-page-title,
 h1.contact-page-title {
   font-size: calc(2rem + 4.7vw);
+  font-family: "Lato", sans-serif;
   text-align: left;
   line-height: 58px;
   letter-spacing: 9px;
@@ -354,7 +356,6 @@ p,
 .blog-main-aside a,
 footer a {
   font-size: 1.6rem;
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 2px;
@@ -392,7 +393,7 @@ a {
 
 a.logo {
   font-size: calc(1.6rem + 0.9vw);
-  font-family: 'Playfair Display SC', serif;
+  font-family: "Playfair Display SC", serif;
   font-style: italic;
   color: #50E3C2;
 }
@@ -406,8 +407,12 @@ nav li a {
 }
 
 nav li a:hover, nav li a:focus {
+  color: #bfbfbf;
+  border-bottom: #bfbfbf dotted 2px;
+}
+
+nav a.current {
   color: #50E3C2;
-  border-bottom: #50E3C2 dotted 2px;
 }
 
 nav a.menu {
@@ -433,7 +438,7 @@ button {
   background: #063974;
   color: #FFF;
   text-transform: uppercase;
-  font-family: 'Playfair Display SC', serif;
+  font-family: "Playfair Display SC", serif;
 }
 
 a.button:hover, a.button:focus,
@@ -576,7 +581,6 @@ form input[type="email"],
 form textarea {
   padding: 30px;
   font-size: 1.8rem;
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 2px;
@@ -586,7 +590,6 @@ form input[type="name"]::-webkit-input-placeholder,
 form input[type="email"]::-webkit-input-placeholder,
 form textarea::-webkit-input-placeholder {
   font-size: 1.8rem;
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 2px;
@@ -596,7 +599,6 @@ form input[type="name"]:-ms-input-placeholder,
 form input[type="email"]:-ms-input-placeholder,
 form textarea:-ms-input-placeholder {
   font-size: 1.8rem;
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 2px;
@@ -606,7 +608,6 @@ form input[type="name"]::-ms-input-placeholder,
 form input[type="email"]::-ms-input-placeholder,
 form textarea::-ms-input-placeholder {
   font-size: 1.8rem;
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 2px;
@@ -616,7 +617,6 @@ form input[type="name"]::placeholder,
 form input[type="email"]::placeholder,
 form textarea::placeholder {
   font-size: 1.8rem;
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 2px;
@@ -713,7 +713,7 @@ header .wrapper nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 header .wrapper nav ul {
@@ -1142,7 +1142,7 @@ header .wrapper .title-container-2 {
 
 @media (max-width: 940px) {
   header .wrapper nav {
-    padding: 50px 0;
+    padding: 30px 0;
   }
   header .wrapper nav ul li {
     margin-left: 20px;
@@ -1431,6 +1431,9 @@ header .wrapper .title-container-2 {
   }
   .blog-main .blog-main-s1 .blog-main-post .blog-txt {
     padding: 50px 25px;
+  }
+  .blog-main .blog-main-s2 .wrapper form {
+    padding-top: 20px;
   }
   form input[type="name"],
   form input[type="email"],
