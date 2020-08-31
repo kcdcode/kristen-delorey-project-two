@@ -62,10 +62,11 @@ h3 {
     color: $colour3;
 }
 
-// Titles and paragraphs ............................................
+// Titles and paragraphs (+ grouped links) ............................................
 p,
 .blog-main-aside li,
-.blog-main-aside a {
+.blog-main-aside a,
+footer a {
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -122,7 +123,6 @@ nav {
         &:hover, &:focus {
             color: $colour1;
             border-bottom: $colour1 dotted 2px;
-            border-top: $colour1 dotted 2px;
         }
     }
 
@@ -139,6 +139,10 @@ nav {
 .aside-txt a {
     color: $colour3;
     font-weight: 700;
+
+    &:hover, &:focus {
+            border-bottom: $colour3 dotted 2px;
+        }
 }
 
 a.button,
@@ -149,8 +153,9 @@ button {
     font-family: 'Playfair Display SC', serif;
 
     &:hover, &:focus {
-        color: $colour2;
-        background: #FFF;
+        color: $colour3;
+        background: $primaryBackgroundColour;
+        border: $colour3 2px solid;
     }
 }
 
@@ -255,12 +260,12 @@ form {
 }
 
 .form-1 {
-    background: $primaryBackgroundColor;
+    background: $primaryBackgroundColour;
     
     input[type="name"],
     input[type="email"],
     textarea {
-        background: $primaryBackgroundColor;
+        background: $primaryBackgroundColour;
     }
 }
 
@@ -276,11 +281,20 @@ form {
 
 footer {
     background-color: $colour4;
+    padding: 20px 0;
 
     p {
         color: #FFF;
         text-align: center;
-        padding: 20px 0;
+    }
+
+    a {
+        color: $colour1;
+        text-align: center;
+
+        &:hover, &:focus {
+            border-bottom: $colour1 dotted 2px;
+        }
     }
 }
 

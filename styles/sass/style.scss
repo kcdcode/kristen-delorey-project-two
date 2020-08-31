@@ -1,72 +1,44 @@
+// Stripping ............................................
 @import "setup";
 
-// Mixins and global selectors ....................
-// span {
-//     font-size: 2rem;
-//     color: #FFF;
-// }
-
-$primaryBackgroundColor: #FAFFFE;
-$secondaryBackgroundColor: #D2F9F1;
+// Variables ....................
+$primaryBackgroundColour: #FAFFFE;
+$secondaryBackgroundColour: #D2F9F1;
 
 $colour1: #50E3C2;
 $colour2: #063974;
 $colour3: #0C5F4C;
 $colour4: #2C2C2C;
 
-
-
 // Skip link ............................................
+// Credit for code below: https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/
+a.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
 
-// a.skip-link {
-//     left:-999px;
-//     position:absolute;
-//     top:auto;
-//     width:1px;
-//     height:1px;
-//     overflow:hidden;
-//     z-index:-999;
+    &:active, &:focus {
+        left: 0; 
+        top: 0;
+        width: auto; 
+        height: auto; 
+        overflow: visible;
+        text-decoration: none; 
+        font-size: 1.6rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #FFF;
+        background: $colour1;
+        padding: 5px;
+    } 
+}
 
-//     &:focus, &:active {
-//         color: #fff;
-//         background-color: red;
-//         left: auto;
-//         top: auto;
-//         width: 30%;
-//         height: auto;
-//         overflow: auto;
-//         margin: 10px 35%;
-//         padding: 5px;
-//         border-radius: 15px;
-//         border: 4px solid yellow;
-//         text-align:center;
-//         font-size:1.2em;
-//         z-index:999;
-//     }    
-// }
-
-
-// $backgroundColor: orange;
-// $headLineFontSize: 25px;
-// $linkColor: cadetblue;
-
-// @mixin customButton($buttonColor) {
-//     font-size: 16px;
-//     color: black;
-//     font-weight: bold;
-//     padding: 20px;
-//     background-color: $buttonColor;
-// }
-
-// @mixin position($type, $top, $right) {
-//     position: $type;
-//     top: $top;
-//     right: $right;
-// }
-
-
-
-@import "grouped";
+// Partials ............................................
+@import "global";
 @import "header";
 @import "main-home";
 @import "main-blog";

@@ -1,10 +1,9 @@
 .blog-main {
-    background: $primaryBackgroundColor;
+    background: $primaryBackgroundColour;
     
     .blog-main-s1 {
         display: flex;
         justify-content: space-between;
-        background-color: $primaryBackgroundColor;
         
         .blog-main-post {
             width: 60%;
@@ -49,7 +48,7 @@
                 }
 
                 a {
-                    padding: 10px 0 20px 0;
+                    padding: 10px 0 5px 0;
                 }
 
                 // Credit for code below: https://www.w3schools.com/howto/howto_css_bullet_color.asp

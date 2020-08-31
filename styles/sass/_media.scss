@@ -194,8 +194,6 @@
         }    
         
         .home-main-s4 {
-            background: $secondaryBackgroundColor;
-            display: grid;
             grid-template-columns: 1fr;
 
             .home-main-s4-s1,
@@ -391,7 +389,7 @@
         }
     }
     
-    footer p {
+    footer p, a {
         font-size: 1.4rem;
     }
 }
